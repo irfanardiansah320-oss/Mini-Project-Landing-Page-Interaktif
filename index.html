@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodi Teknik Komputer dan Informatika</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "nav-bar">
+                <span class="brand">JTK</span>
+                <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">
+                    ☰
+                </button>
+            </div>
+            
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggle">Mode Gelap</button></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h1>Teknik Komputer dan Informatika</h1>
+        <p class="lead">Pelajari cara merancang, mengembangkan, dan mengelola sistem komputer serta teknologi informasi bersama dosen praktisi dan fasilitas lab lengkap.</p>
+
+        <div class="row">
+            <section id="home">
+                <h2>Apa itu Teknik Komputer dan Informatika?</h2>
+                <p>Jurusan Teknik Informatika dan Komputer merupakan salah satu bidang ilmu yang mempelajari tentang bagaimana cara menggunakan teknologi komputer secara maksimal guna menangani berbagai masalah transformasi ataupun pengolahan data dengan proses logika. Di jurusan ini, kamu akan belajar tentang berbagai prinsip terkait dengan ilmu komputer, mulai dari proses perancangan, pengembangan, pengujian, sampai evaluasi sistem operasi perangkat lunak. Selama masa perkuliahan, kamu akan banyak mengkaji pemrograman dan juga komputasi, dan dibekali dengan keterampilan merancang software atau perangkat lunak.</p>
+                <img src="assets/gambar1.jpg" alt="Ilustrasi programer yang sedang melakukan coding">
+            </section>
+
+            <section id="about">
+                <h2>Tentang Jurusan</h2>
+                <img src="assets/gambar2.jpg" alt="Gambaran coding di layar komputer">
+                <p>Program studi Teknik Komputer dan Informatika bertujuan untuk menghasilkan lulusan yang mampu merancang, mengembangkan, dan mengelola sistem komputer serta teknologi informasi.</p>
+            </section>
+        </div>
+
+        <section id="fitur">
+            <h2>Keunggulan Program Studi</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Kurikulum Terkini</h3>
+                    <p>Materi selalu diperbarui mengikuti perkembangan teknologi industri.</p>
+                </div>
+                <div class="card">
+                    <h3>Dosen Praktisi</h3>
+                    <p>Diajar oleh pengajar yang juga aktif bekerja di industri teknologi.</p>
+                </div>
+                <div class="card">
+                    <h3>Fasilitas Lab</h3>
+                    <p>Laboratorium komputer lengkap untuk praktikum setiap minggu.</p>
+                </div>
+                <div class="card">
+                    <h3>Peluang Magang</h3>
+                    <p>Kerja sama dengan berbagai perusahaan teknologi untuk program magang.</p>
+                </div>
+            </div>
+        </section>
+
+        <select id="filter-kategori">
+            <option value="semua">semua</option>
+            <option value="akademik">Akademik</option>
+            <option value="karier">Karier</option>
+            <option value="komunitas">Komunitas</option>
+        </select>
+
+        <section>
+            <h2>Layanan Prodi</h2>
+            <ul id="layananList"></ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Untuk informasi lebih lanjut, silakan hubungi kami di:</p>
+            <ul>
+                <li>email : info@prodi-tk.informatika.ac.id</li>
+                <li>telp : 0811 2222 3333</li>
+            </ul>
+            <a href="mailto:info@prodi-tk.informatika.ac.id" class="btn">Kirim Email</a>
+        </section>
+        
+        <form id="contactForm">
+            <input type="text" id= "namaInput" placeholder="Nama">
+            <span id="namaError" style="color:Red"></span>
+
+            <input type="email" id= "emailInput" placeholder="Email">
+            <span id="emailError" style="color:Red"></span>
+
+            <button type="submit">Kirim</button>
+            <p id="formSuccess" hidden style="color: green;">Pesan Terkirim</p>
+        </form>
+
+        <section>
+            <h2>FAQ</h2>
+            <div class ="faq-item">
+                <button class="faq-question" aria-expanded="false"> Apa saja pertaannya? </button>
+                <p class="faq-answer hidden">Ada D3 Teknik Informatika, D4 Teknik Informatika</p>
+            </div>
+            <div class ="faq-item">
+                <button class="faq-question" aria-expanded="false"> Ada program Magang? </button>
+                <p class="faq-answer">Ada, kerja sama dengan perusahaan mitra</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknik Komputer dan Informatika. All rights reserved.</p>
+    </footer>
+
+<button id="backToTop" hidden>↑ Atas</button>
+
+</body>
+
+</html>
